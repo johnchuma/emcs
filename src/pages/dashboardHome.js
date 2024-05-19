@@ -14,6 +14,14 @@ const DashboardHome = () => {
          <h1 className="text-2xl">NN %</h1>
             <h1 className="text-muted">Humidity</h1>
          </div>
+         <div className=" p-5 border border-borderColor rounded-md">
+         <h1 className="text-2xl text-red-400">HIGH</h1>
+            <h1 className="text-muted">Water sensor readings</h1>
+         </div>
+         <div className=" p-5 border border-borderColor rounded-md">
+         <h1 className="text-2xl text-green-400">LOW</h1>
+            <h1 className="text-muted">Smoke sensor readings</h1>
+         </div>
       </div>
     </div> );
 }
