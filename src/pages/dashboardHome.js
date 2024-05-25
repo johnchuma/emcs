@@ -7,11 +7,11 @@ const DashboardHome = () => {
               <h2 className="text-lg">Sensor Readings</h2>
       <div className="bg-white p-5 border grid grid-cols-2 gap-6 border-borderColor py-5 rounded-md mt-5">
          <div className="p-5 border border-borderColor rounded-md">
-            <h1 className="text-2xl">NN Celcius</h1>
+            <h1 className="text-2xl">27 Celcius</h1>
             <h1 className="text-muted">Temperature</h1>
          </div>
          <div className=" p-5 border border-borderColor rounded-md">
-         <h1 className="text-2xl">NN %</h1>
+         <h1 className="text-2xl">35 %</h1>
             <h1 className="text-muted">Humidity</h1>
          </div>
          <div className=" p-5 border border-borderColor rounded-md">
