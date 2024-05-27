@@ -15,7 +15,7 @@ const DashboardAlert = () => {
               </tr>
             </thead>
             <tbody className="mt-3">
-              {["Tempature is above normal level","Humidity is above avarages"]
+              {["Tempature is above normal level","Alert! Humidity is below 80%"]
                 .map((item) => (
                   <tr className="">
                    

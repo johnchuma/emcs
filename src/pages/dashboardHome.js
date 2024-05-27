@@ -11,7 +11,7 @@ const DashboardHome = () => {
             <h1 className="text-muted">Temperature</h1>
          </div>
          <div className=" p-5 border border-borderColor rounded-md">
-         <h1 className="text-2xl">35 %</h1>
+         <h1 className="text-2xl">90 %</h1>
             <h1 className="text-muted">Humidity</h1>
          </div>
          <div className=" p-5 border border-borderColor rounded-md">
