@@ -22,7 +22,7 @@ const DashboardAlert = () => {
                     <td className="py-2 text-sm">2 min ago</td>
                     <td className="py-2 text-sm">{item}</td>
 
-                    
+                       
                   </tr>
                 ))}
             </tbody>

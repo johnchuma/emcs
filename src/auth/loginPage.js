@@ -45,7 +45,7 @@ const LoginPage = () => {
                 
            
           }}
-          className=" col-span-7  py-16 justify-center flex flex-col w-8/12 mx-auto items-center  text-center "
+          className=" col-span-7  py-16 justify-center flex flex-col w-8/12 mx-auto items-start  text-center "
         >
         
           <div className="w-full text-textColor text-sm">
@@ -82,6 +82,12 @@ const LoginPage = () => {
           >
             {loading ? <Spinner /> : "Login"}
           </button>
+         
+               <div className="mt-2 text-start">
+            Don't have an account ? <span onClick={()=>{
+            navigate('/register')
+          }} className="text-sm font-bold cursor-pointer">Register</span>
+          </div>
           
         </form>
       </div>

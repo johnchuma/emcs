@@ -6,25 +6,9 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 export const registerUser = async(data)=>{
     try {
       const  {email,password} = data;
-      const userDoc = await getDoc(doc(firestore, "users", email));
-      let response;
-      if (userDoc.exists()) {
-        return {
-            status:false,
-            message:"Email already existes"
-        }
-      }
-      else{
-        const credentials = await createUserWithEmailAndPassword(auth,email,password)
-        const id = credentials.user.email
-         response = await setDoc(doc(firestore,"users",id), {
-            id,
-            createdAt: Timestamp.now(),
-            ...data
-        })
-      }
+    
+        await createUserWithEmailAndPassword(auth,email,password)
       
-        return {status:true};
     } catch (error) {
         throw error
     }
